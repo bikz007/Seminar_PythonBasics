@@ -2,9 +2,9 @@
 Some python notebooks i prepared for a seminar.
 
 ## Contents
-  * [Intro to Python](https://github.com/bikz007/Seminar_PythonBasics/blob/master/Intro.ipynb)
-  * [Flow of control](https://github.com/bikz007/Seminar_PythonBasics/blob/master/FlowOfControl.ipynb)
-  * [Functions](https://github.com/bikz007/Seminar_PythonBasics/blob/master/PythonFunc.ipynb)
+  * [Intro to Python(incomplete)](https://github.com/bikz007/Seminar_PythonBasics/blob/master/Intro.ipynb)
+  * [Flow of control(incomplete)](https://github.com/bikz007/Seminar_PythonBasics/blob/master/FlowOfControl.ipynb)
+  * [Functions(incomplete)](https://github.com/bikz007/Seminar_PythonBasics/blob/master/PythonFunc.ipynb)
   * [Python String](https://github.com/bikz007/Seminar_PythonBasics/blob/master/Strings.ipynb)
-  * [Lists](https://github.com/bikz007/Seminar_PythonBasics/blob/master/Lists.ipynb)
-  * [Dictionary Manipulations](https://github.com/bikz007/Seminar_PythonBasics/blob/master/Dictionary.ipynb)
+  * [Lists(incomplete)](https://github.com/bikz007/Seminar_PythonBasics/blob/master/Lists.ipynb)
+  * [Dictionary Manipulations(incomplete)](https://github.com/bikz007/Seminar_PythonBasics/blob/master/Dictionary.ipynb)
