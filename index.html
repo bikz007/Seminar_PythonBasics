@@ -1,0 +1,374 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>Python-Building Blocks</title>
+
+        <link rel="stylesheet" href="css/reveal.css">
+        <!-- <link rel="stylesheet" href="css/theme/black.css"> -->
+        <link rel="stylesheet" href="css/theme/simple.css" id="theme">
+        
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+    </head>
+
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section>
+					<section data-background-transition="slide" data-background="img/pyprint.jpg" style="background: rgba(255,255,255,.8); color: black" id="presentable" class="bookend">
+							<h3 style="color: rgba(0,0,0,.9);font-family: monospace;">
+								Everything You Always Wanted <br>
+								to Know About <code>Python</code>
+								
+								
+							</h3>
+							<p>Bikram Modak</p>
+							<small><p>Siliguri Institute of Technology<br>
+							</p></small>
+							
+					</section>
+					
+	    		</section>
+
+	    		<section>
+	    			<section style="font-size: 17px; font-family: monospace;">
+	    			<h3>Building blocks of Python programming</h3>
+
+	    				<h5><br><br>Some of the building blocks of Python programming language include:</h3>
+
+						<ul>
+							<li><p>Objects – &#39;Everything is an object in Python.&#39;</p>
+								<p>  Using objects is almost in every instance when programming with python programming language. <br>This includes the use of integers, floats, strings etc.
+   									All the objects used above have reference.</p>
+							</li>
+
+						
+							<li>References - The variables in Python programming language are associated with references</li><br>
+						
+
+						
+							<li>Fundamental Types - Python has some fundamental types - <mark style="color:black">boolean, int, float, string, list, dictionary, set, tuple</mark></li><br>
+						
+						
+							<li>Names have scope, objects don’t. Objects only ‘disappear’ if nothing references them. Objects are kept if references still exist to them, regardless of which scope the reference exists in.</li><br>
+						
+						
+							<li>Containers hold references to objects - not the objects themselves . Containers can hold other containers . Examples of containers include <mark style="color:black">tuple, list, set, dict</mark>; these are the built-in containers. More container types are available in the collections module.</li><br>
+						
+						
+							<li>Python has a few control structures : for, if, while</li><br>
+						
+						
+							<li>Python has functions : def <name>(<arguments>)</li><br>
+						
+						
+							<li>Python has classes with inheritance and multiple inheritance: class()</li><br>
+						
+						
+							<li>Python has modules (source files which can be imported which then extends the functionality available to a given program), and packages (groups of modules). Modules can define variables, functions and classes in any combination.</li><br>
+						</ul>
+	    			</section>
+
+	    			<section>
+	    				<h3>Example 1</h3>
+						  <pre class="python">
+						  	<code data-trim data-noescape>
+						  	<div>
+							In  [1]: # We assign an integer value
+								i=99
+							</div>
+							<div>
+							In  [2]: # checking what type of object is i
+								type(i)
+							</div>
+							<div>
+							Out [2]:int
+							</div>
+						  	</code>
+						  </pre>
+					</section>
+	    			<section>
+	    				<h3>Example 2</h3>
+						  <pre class="python">
+						  	<code data-trim data-noescape>
+							In  [3]: id(i)
+
+							Out [3]: 10922560
+
+							In  [4]: i="Im a string"
+								 id(i)
+
+							Out [4]: 140611463627824
+						  	</code>
+						  </pre>
+					</section>
+					<section>
+						<img src="img/variable-reassignment.jpg" alt="object demo">
+					</section>
+	    		</section>
+
+	    		<section>
+	    			<section>
+		    			<h3>Data Types</h3>
+		    			<div style="font-size: 24px;">
+							<h5>There are a small set of what are known as primitives. These are basic data types that are determined for us by the interpreter.</h5>
+							<ul>
+								<li>boolean - has two possible values, True or False</li>
+								<li>integer (int) types - for storage of integer values</li>
+								<li>floating (float) point types - for storage of decimal numbers (i.e. a fractional part after the decimal)</li>
+								<li>string (str) type used to store strings in memory.</li>
+								<li>list - are also refered to as arrays that can contain mixed datatypes.</li>
+								<li>object - user defined types.</li>
+								<li>Numeric literal determine the type: number written in a program with no decimal point considered integer, otherwise, considered float.</li>
+								<li><p>Some operations behave differently depending on data type</p>
+								    A variable in Python can refer to items of any type</li>
+							</ul>
+						</div>
+					</section>
+					<section>
+						<h3>Comments</h3>
+						<div style="font-size: 24px;">
+							<ul>
+								<li>Comments: notes of explanation within a program. <br>&nbsp;Ignored by Python interpreter, its intended for a person reading the program's code.<br>&nbsp;Begin with a # character.<br><mark><code># This is a comment.</code></mark></li>
+								<li>End-line comment: appears at the end of a line of code. <br>&nbsp;Typically explains the purpose of that line<br><mark><code>item = 100 # This is an in-line comment.</code></mark></li>
+							</ul>
+						</div>
+					</section>
+
+					<section>
+						<h3>Statements</h3>
+						<h5>Statements in Python are made up of:</h5>
+						<div style="font-size: 22px;">
+							<ul>
+								<li>    <bold>reserved words</bold> - words that have pre-defined meanings in the Java language</li>
+    
+								<li>    <bold>identifiers</bold> - words that are created by programmers for names of variables, functions, classes, etc.</li>
+
+								<li>    <bold>literals</bold> - literal values written in code, like strings or numbers
+								 
+								        <p>&emsp;integer literal - an actual integer number written in code (4, -10, 18)</p>
+								 
+								        <p>&emsp;float literal - an actual decimal number written in code (4.5, -12.9, 5.0)</p>
+								 
+								        <p>&emsp;character literal - a character in single quotes: ('F', 'a', '\n')</p>
+
+								        <p>&emsp;string literal - a string in double quotes: ("Hello", "Bye", "Wow!\n")</p>
+								</li>
+								 
+								<li>   <bold>operators</bold> - special symbols that perform certain actions on their operands
+
+								        <p>&emsp;A unary operator has one operand</p>
+
+								        <p>&emsp;A binary operator has two operands</p>
+
+								        <p>&emsp;A ternary operator has three operands (there's only one of these)</p>
+								</li>
+								        
+								<li>    Calls to methods (functions)</li>
+							</ul>
+						</div>
+
+					</section>
+	    		</section>
+	    		<section>
+	    			<a href="python_strings.html"><h2>Understanding string with python</h2></a>
+	    		</section>
+
+            </div>
+        </div>
+
+
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+
+        <script>
+            // More info about config & dependencies:
+            // - https://github.com/hakimel/reveal.js#configuration
+            // - https://github.com/hakimel/reveal.js#dependencies
+
+            Reveal.configure({ pdfMaxPagesPerSlide: 1 }),
+
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+                transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+                toolbar: {
+					// Specifies where the toolbar will be shown: 'top' or 'bottom'
+					position: 'bottom',
+
+					// Add button to toggle fullscreen mode for the presentation
+					fullscreen: true,
+
+					// Add button to toggle the overview mode on and off
+					overview: true,
+
+					// Add button to pause (hide) the presentation display
+					pause: false,
+
+					// Add button to show the speaker notes
+					notes: false,
+
+					// Add button to show the help overlay
+					help: false,
+
+					// If true, the reveal.js-menu will be moved into the toolbar.
+					// Set to false to leave the menu on its own.
+					captureMenu: true,
+
+					// If true, the playback control will be moved into the toolbar.
+					// This is only relevant if the presentation is configured to autoSlide.
+					// Set to false to leave the menu on its own.
+					capturePlaybackControl: true,
+
+					// By default the menu will load it's own font-awesome library
+					// icons. If your presentation needs to load a different
+					// font-awesome library the 'loadIcons' option can be set to false
+					// and the menu will not attempt to load the font-awesome library.
+					loadIcons: true
+				},
+
+				menu: {
+					// Specifies which side of the presentation the menu will 
+					// be shown. Use 'left' or 'right'.
+					side: 'left',
+
+					// Specifies the width of the menu.
+					// Can be one of the following:
+					// 'normal', 'wide', 'third', 'half', 'full', or
+					// any valid css length value
+					width: 'normal',
+
+					// Add slide numbers to the titles in the slide list.
+					// Use 'true' or format string (same as reveal.js slide numbers)
+					numbers: false,
+
+					// Specifies which slide elements will be used for generating
+					// the slide titles in the menu. The default selects the first
+					// heading element found in the slide, but you can specify any
+					// valid css selector and the text from the first matching
+					// element will be used.
+					// Note: that a section data-menu-title attribute or an element
+					// with a menu-title class will take precedence over this option
+					titleSelector: 'h1, h2, h3, h4, h5, h6',
+
+					// If slides do not have a matching title, attempt to use the
+					// start of the text content as the title instead
+					useTextContentForMissingTitles: false,
+
+					// Hide slides from the menu that do not have a title.
+					// Set to 'true' to only list slides with titles.
+					hideMissingTitles: false,
+
+					// Adds markers to the slide titles to indicate the 
+					// progress through the presentation. Set to 'false'
+					// to hide the markers.
+					markers: true,
+
+					// Specify custom panels to be included in the menu, by
+					// providing an array of objects with 'title', 'icon'
+					// properties, and either a 'src' or 'content' property.
+					custom: false,
+
+					// Specifies the themes that will be available in the themes
+					// menu panel. Set to 'true' to show the themes menu panel
+					// with the default themes list. Alternatively, provide an
+					// array to specify the themes to make available in the
+					// themes menu panel, for example...
+					// [
+					//     { name: 'Black', theme: 'css/theme/black.css' },
+					//     { name: 'White', theme: 'css/theme/white.css' },
+					//     { name: 'League', theme: 'css/theme/league.css' }
+					// ]
+					themes: false,
+
+					// Specifies the path to the default theme files. If your
+					// presentation uses a different path to the standard reveal
+					// layout then you need to provide this option, but only
+					// when 'themes' is set to 'true'. If you provide your own 
+					// list of themes or 'themes' is set to 'false' the 
+					// 'themesPath' option is ignored.
+					themesPath: 'css/theme/',
+
+					// Specifies if the transitions menu panel will be shown.
+					// Set to 'true' to show the transitions menu panel with
+					// the default transitions list. Alternatively, provide an
+					// array to specify the transitions to make available in
+					// the transitions panel, for example...
+					// ['None', 'Fade', 'Slide']
+					transitions: false,
+
+					// Adds a menu button to the slides to open the menu panel.
+					// Set to 'false' to hide the button.
+					openButton: true,
+
+					// If 'true' allows the slide number in the presentation to
+					// open the menu panel. The reveal.js slideNumber option must 
+					// be displayed for this to take effect
+					openSlideNumber: false,
+
+					// If true allows the user to open and navigate the menu using
+					// the keyboard. Standard keyboard interaction with reveal
+					// will be disabled while the menu is open.
+					keyboard: true,
+
+					// Normally the menu will close on user actions such as
+					// selecting a menu item, or clicking the presentation area.
+					// If 'true', the sticky option will leave the menu open
+					// until it is explicitly closed, that is, using the close
+					// button or pressing the ESC or m key (when the keyboard 
+					// interaction option is enabled).
+					sticky: false,
+
+					// If 'true' standard menu items will be automatically opened
+					// when navigating using the keyboard. Note: this only takes 
+					// effect when both the 'keyboard' and 'sticky' options are enabled.
+					autoOpen: true,
+
+					// If 'true' the menu will not be created until it is explicitly
+					// requested by calling RevealMenu.init(). Note this will delay
+					// the creation of all menu panels, including custom panels, and
+					// the menu button.
+					delayInit: false,
+
+					// If 'true' the menu will be shown when the menu is initialised.
+					openOnInit: false,
+
+					// By default the menu will load it's own font-awesome library
+					// icons. If your presentation needs to load a different
+					// font-awesome library the 'loadIcons' option can be set to false
+					// and the menu will not attempt to load the font-awesome library.
+					loadIcons: true
+				},
+
+
+                dependencies: [
+                    { src: 'plugin/markdown/marked.js' },
+                    { src: 'plugin/markdown/print-pdf.js' },
+                    { src: 'plugin/markdown/markdown.js' },
+                    { src: 'plugin/toolbar/toolbar.js' },
+                    { src: 'plugin/menu/menu.js' },
+                    { src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/zoom-js/zoom.js', async: true },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+                ]
+            });
+        </script>
+
+    </body>
+</html>
